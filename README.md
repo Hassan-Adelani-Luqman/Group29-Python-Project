@@ -1,0 +1,1 @@
+This project is about the Tourist attracction Application which is part of SLD work 
