@@ -1,4 +1,4 @@
-This tourist App project consist of two python python files
+This tourist App project consist of two python files
  
 The first one(distnce calculator.py):
 
