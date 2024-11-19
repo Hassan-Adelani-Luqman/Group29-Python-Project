@@ -1,4 +1,6 @@
-#!/usr/bin/python3
+
+from distance_calculator import calculate_distance_and_time
+
 class TouristAttraction:
     def __init__(self, name, description, location, best_time, entry_fee, activities):
         self.name = name
@@ -34,14 +36,17 @@ class TouristGuideApp:
             print("\n--- Tourist Guide ---")
             print("1. View Countries")
             print("2. Search for an Attraction")
-            print("3. Exit")
-            choice = input("Select an option (1-3): ")
+            print("3. Calculate Distance and Cost")
+            print("4. Exit")
+            choice = input("Select an option (1-4): ")
             
             if choice == '1':
                 self.display_countries()
             elif choice == '2':
                 self.search_attraction()
             elif choice == '3':
+                self.calculate_distance_and_cost()
+            elif choice == '4':
                 print("Exiting the Tourist Guide.")
                 break
             else:
@@ -89,6 +94,24 @@ class TouristGuideApp:
                     found = True
         if not found:
             print("No matching attractions found.")
+
+    def calculate_distance_and_cost(self):
+        user_location = input("Enter your current location: ")
+        destination_name = input("Enter the name of the attraction you want to visit: ")
+        
+        for country, attractions in self.attractions.items():
+            for attraction in attractions:
+                if destination_name.lower() in attraction.name.lower():
+                    result = calculate_distance_and_time(user_location, attraction.location)
+                    if result:
+                        print(f"Distance to {attraction.name}: {result['distance_km']:.2f} km")
+                        print(f"Walking Time: {result['time_walking_hr']:.2f} hours")
+                        print(f"Driving Time: {result['time_driving_hr']:.2f} hours")
+                        print(f"Motorcycle Time: {result['time_motorcycle_hr']:.2f} hours")
+                    else:
+                        print("Could not calculate distance and time.")
+                    return
+        print("Attraction not found.")
 
 if __name__ == "__main__":
     app = TouristGuideApp()
