@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 class TouristAttraction:
     def __init__(self, name, description, location, best_time, entry_fee, activities):
         self.name = name
