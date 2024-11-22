@@ -19,18 +19,7 @@ class TouristAttraction:
         print(f"Activities: {self.activities}\n")
 
 class TouristGuideApp:
-    def __init__(self):
-        self.attractions = {
-            "Kenya": [
-                TouristAttraction("Maasai Mara", "Famous wildlife reserve", "Narok County", "July to October", "$70", "Game drives, bird watching"),
-                TouristAttraction("Mount Kenya", "Highest mountain in Kenya", "Central Kenya", "December to March", "$50", "Hiking, mountain climbing")
-            ],
-            "Egypt": [
-                TouristAttraction("Pyramids of Giza", "Ancient pyramids", "Giza", "All year round", "$20", "Sightseeing, photography"),
-                TouristAttraction("Nile River Cruise", "Scenic river cruise", "Various locations", "October to April", "$100", "Boat rides, sightseeing")
-            ]
-        }
-
+ 
     def main_menu(self):
         while True:
             print("\n--- Tourist Guide ---")
