@@ -1,9 +1,6 @@
-This tourist App project consist of two python files
- 
-The first one(distnce calculator.py):
+The project contains two Python files: distance_calculator.py and tourist_guide_app.py. 
 
-This script calculates the distance and estimated time between any two locations using geopy's Nominatim for geocoding and geodesic for distance computation. Also, it does the time estimates for walking, driving, and motorcycle. It is based on average speeds. User inputs the current location and destination.
+Distance_calculator.py is a Python program that calculates the distance between any two locations and gives an approximation of travel time on foot, car, and motorcycle. It makes use of a library called Geopy for geocoding and computing distances. 
+The tourist_guide_app.py file implements a tourist guide application to enhance and promote tourism. It provides detailed information about attractions, including their location, description, best visiting time, entry fees, and activities.
 
-The second one(TouristGuideApp.py):
-
-This is a Python script that is an application for a tourist guide, organized in a country-wise manner. It allows a user to view attractions, search an attraction by name, and access information like location, activities, entry fees, and best time to visit. It features an interactive menu to navigate and display information.
+Users can also search for attractions, view countries where tourist spots are available, calculate the distance to the destination they want to travel to, and the time it takes. This supports our mission with a complete website for travelers to plan tours easily and conveniently, thereby encouraging tourism through easy access to crucial
