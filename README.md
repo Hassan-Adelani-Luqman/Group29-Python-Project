@@ -1,4 +1,4 @@
-The project contains four Python files: distance_calculator.py, tourist_guide_app.py, testfile.py, and format.py 
+The project contains four Python files: distance_calculator.py, tourist_guide_app.py, testFile.py, and format.py 
 
 Distance_calculator.py is a Python program that calculates the distance between any two locations and gives an approximation of travel time on foot, car, and motorcycle. It makes use of a library called Geopy for geocoding and computing distances. 
 
