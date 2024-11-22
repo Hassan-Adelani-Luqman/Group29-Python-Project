@@ -1,5 +1,5 @@
 The project contains four Python files: distance_calculator.py, tourist_guide_app.py, testFile.py, and format.py 
-YES
+
 Distance_calculator.py is a Python program that calculates the distance between any two locations and gives an approximation of travel time on foot, car, and motorcycle. It makes use of a library called Geopy for geocoding and computing distances. 
 
 The TouristGuideApp.py file implements a tourist guide application to enhance and promote tourism. It provides detailed information about attractions, including their location, description, best visiting time, entry fees, and activities.
